@@ -1,1 +1,1 @@
-export const DownloadFile = () => <a href="/openapi.json" download>Download the API specification</a>;
+export const DownloadFile = ({ href = "/openapi.json", label = "Download the API specification" }) => <a href={href} download>{label}</a>;

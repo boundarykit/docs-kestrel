@@ -28,7 +28,9 @@
               "quickstart",
               "architecture",
               "glossary",
-              "changelog"
+              "changelog",
+              "mcp",
+              "bac"
             ],
             "root": "index"
           },
@@ -44,7 +46,10 @@
               "documentation/migrate-from-v1-to-v2",
               "documentation/security-model",
               "documentation/session-lifecycle",
-              "documentation/token-scopes"
+              "documentation/token-scopes",
+              "documentation/troubleshooting",
+              "documentation/policy-expression-reference",
+              "documentation/audit-event-catalog"
             ]
           },
           {
@@ -81,7 +86,8 @@
               "cookbook/test-nested-rules",
               "cookbook/trace-a-webhook",
               "cookbook/inspect-usage-spikes",
-              "cookbook/stage-a-policy-rollout"
+              "cookbook/stage-a-policy-rollout",
+              "cookbook/BoundaryQL-Reference"
             ]
           },
           {
@@ -113,7 +119,8 @@
               "administration/billing",
               "administration/service-accounts",
               "administration/membership-reviews",
-              "administration/organization-settings"
+              "administration/organization-settings",
+              "administration/security-compliance"
             ]
           },
           {
@@ -492,7 +499,8 @@
               "cicd/artifact-promotion",
               "cicd/secret-injection",
               "cicd/failure-diagnostics",
-              "cicd/release-evidence"
+              "cicd/release-evidence",
+              "api-reference"
             ]
           }
         ]
