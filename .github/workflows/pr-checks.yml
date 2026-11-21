@@ -1,0 +1,10 @@
+name: Documentation trial
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, labeled, unlabeled]
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: contains(github.event.pull_request.labels.*.name, 'gating-trial')
+    uses: boundarykit/middleware/.github/workflows/pr-checks.yml@main

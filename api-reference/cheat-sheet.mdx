@@ -1,0 +1,219 @@
+---
+title: "API cheat sheet"
+---
+
+Use this reference to find a route or webhook.
+
+## REST API
+
+| Method | Route or event | Reference |
+| --- | --- | --- |
+| GET | `/v1/boundaries` | [List boundaries](/api-reference/endpoint/v1/list-boundaries) |
+| POST | `/v1/boundaries` | [Create boundary](/api-reference/endpoint/v1/create-boundary) |
+| GET | `/v1/boundaries/{id}` | [Get boundary](/api-reference/endpoint/v1/get-boundary) |
+| PATCH | `/v1/boundaries/{id}` | [Update boundary](/api-reference/endpoint/v1/update-boundary) |
+| DELETE | `/v1/boundaries/{id}` | [Delete boundary](/api-reference/endpoint/v1/delete-boundary) |
+| GET | `/v1/boundaries/search` | [Search boundaries](/api-reference/endpoint/v1/search-boundaries) |
+| GET | `/v1/boundaries/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history) |
+| GET | `/v2/boundaries` | [List boundaries](/api-reference/endpoint/v2/list-boundaries) |
+| POST | `/v2/boundaries` | [Create boundary](/api-reference/endpoint/v2/create-boundary) |
+| GET | `/v2/boundaries/{id}` | [Get boundary](/api-reference/endpoint/v2/get-boundary) |
+| PATCH | `/v2/boundaries/{id}` | [Update boundary](/api-reference/endpoint/v2/update-boundary) |
+| DELETE | `/v2/boundaries/{id}` | [Delete boundary](/api-reference/endpoint/v2/delete-boundary) |
+| GET | `/v2/boundaries/search` | [Search boundaries](/api-reference/endpoint/v2/search-boundaries) |
+| GET | `/v2/boundaries/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history) |
+| GET | `/v1/policies` | [List policies](/api-reference/endpoint/v1/list-policies) |
+| POST | `/v1/policies` | [Create policy](/api-reference/endpoint/v1/create-policy) |
+| GET | `/v1/policies/{id}` | [Get policy](/api-reference/endpoint/v1/get-policy) |
+| PATCH | `/v1/policies/{id}` | [Update policy](/api-reference/endpoint/v1/update-policy) |
+| DELETE | `/v1/policies/{id}` | [Delete policy](/api-reference/endpoint/v1/delete-policy) |
+| GET | `/v1/policies/search` | [Search policies](/api-reference/endpoint/v1/search-policies) |
+| GET | `/v1/policies/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-policies-id-history) |
+| GET | `/v2/policies` | [List policies](/api-reference/endpoint/v2/list-policies) |
+| POST | `/v2/policies` | [Create policy](/api-reference/endpoint/v2/create-policy) |
+| GET | `/v2/policies/{id}` | [Get policy](/api-reference/endpoint/v2/get-policy) |
+| PATCH | `/v2/policies/{id}` | [Update policy](/api-reference/endpoint/v2/update-policy) |
+| DELETE | `/v2/policies/{id}` | [Delete policy](/api-reference/endpoint/v2/delete-policy) |
+| GET | `/v2/policies/search` | [Search policies](/api-reference/endpoint/v2/search-policies) |
+| GET | `/v2/policies/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-policies-id-history) |
+| POST | `/v2/policies/import` | [Import policy bundle](/api-reference/endpoint/v2/import-policy-bundle) |
+| GET | `/v1/agents` | [List agents](/api-reference/endpoint/v1/list-agents) |
+| POST | `/v1/agents` | [Create agent](/api-reference/endpoint/v1/create-agent) |
+| GET | `/v1/agents/{id}` | [Get agent](/api-reference/endpoint/v1/get-agent) |
+| PATCH | `/v1/agents/{id}` | [Update agent](/api-reference/endpoint/v1/update-agent) |
+| DELETE | `/v1/agents/{id}` | [Delete agent](/api-reference/endpoint/v1/delete-agent) |
+| GET | `/v1/agents/search` | [Search agents](/api-reference/endpoint/v1/search-agents) |
+| GET | `/v1/agents/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-agents-id-history) |
+| GET | `/v2/agents` | [List agents](/api-reference/endpoint/v2/list-agents) |
+| POST | `/v2/agents` | [Create agent](/api-reference/endpoint/v2/create-agent) |
+| GET | `/v2/agents/{id}` | [Get agent](/api-reference/endpoint/v2/get-agent) |
+| PATCH | `/v2/agents/{id}` | [Update agent](/api-reference/endpoint/v2/update-agent) |
+| DELETE | `/v2/agents/{id}` | [Delete agent](/api-reference/endpoint/v2/delete-agent) |
+| GET | `/v2/agents/search` | [Search agents](/api-reference/endpoint/v2/search-agents) |
+| GET | `/v2/agents/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-agents-id-history) |
+| GET | `/v1/sandboxes` | [List sandboxes](/api-reference/endpoint/v1/list-sandboxes) |
+| POST | `/v1/sandboxes` | [Create sandbox](/api-reference/endpoint/v1/create-sandbox) |
+| GET | `/v1/sandboxes/{id}` | [Get sandbox](/api-reference/endpoint/v1/get-sandbox) |
+| PATCH | `/v1/sandboxes/{id}` | [Update sandbox](/api-reference/endpoint/v1/update-sandbox) |
+| DELETE | `/v1/sandboxes/{id}` | [Delete sandbox](/api-reference/endpoint/v1/delete-sandbox) |
+| GET | `/v1/sandboxes/search` | [Search sandboxes](/api-reference/endpoint/v1/search-sandboxes) |
+| GET | `/v1/sandboxes/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-sandboxes-id-history) |
+| GET | `/v2/sandboxes` | [List sandboxes](/api-reference/endpoint/v2/list-sandboxes) |
+| POST | `/v2/sandboxes` | [Create sandbox](/api-reference/endpoint/v2/create-sandbox) |
+| GET | `/v2/sandboxes/{id}` | [Get sandbox](/api-reference/endpoint/v2/get-sandbox) |
+| PATCH | `/v2/sandboxes/{id}` | [Update sandbox](/api-reference/endpoint/v2/update-sandbox) |
+| DELETE | `/v2/sandboxes/{id}` | [Delete sandbox](/api-reference/endpoint/v2/delete-sandbox) |
+| GET | `/v2/sandboxes/search` | [Search sandboxes](/api-reference/endpoint/v2/search-sandboxes) |
+| GET | `/v2/sandboxes/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-sandboxes-id-history) |
+| GET | `/v1/tokens` | [List tokens](/api-reference/endpoint/v1/list-tokens) |
+| POST | `/v1/tokens` | [Create token](/api-reference/endpoint/v1/create-token) |
+| GET | `/v1/tokens/{id}` | [Get token](/api-reference/endpoint/v1/get-token) |
+| PATCH | `/v1/tokens/{id}` | [Update token](/api-reference/endpoint/v1/update-token) |
+| DELETE | `/v1/tokens/{id}` | [Delete token](/api-reference/endpoint/v1/delete-token) |
+| GET | `/v1/tokens/search` | [Search tokens](/api-reference/endpoint/v1/search-tokens) |
+| GET | `/v1/tokens/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-tokens-id-history) |
+| GET | `/v2/tokens` | [List tokens](/api-reference/endpoint/v2/list-tokens) |
+| POST | `/v2/tokens` | [Create token](/api-reference/endpoint/v2/create-token) |
+| GET | `/v2/tokens/{id}` | [Get token](/api-reference/endpoint/v2/get-token) |
+| PATCH | `/v2/tokens/{id}` | [Update token](/api-reference/endpoint/v2/update-token) |
+| DELETE | `/v2/tokens/{id}` | [Delete token](/api-reference/endpoint/v2/delete-token) |
+| GET | `/v2/tokens/search` | [Search tokens](/api-reference/endpoint/v2/search-tokens) |
+| GET | `/v2/tokens/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-tokens-id-history) |
+| POST | `/v2/tokens/exchange` | [Exchange scoped token](/api-reference/endpoint/v2/exchange-scoped-token) |
+| GET | `/v1/sessions` | [List sessions](/api-reference/endpoint/v1/list-sessions) |
+| POST | `/v1/sessions` | [Create session](/api-reference/endpoint/v1/create-session) |
+| GET | `/v1/sessions/{id}` | [Get session](/api-reference/endpoint/v1/get-session) |
+| PATCH | `/v1/sessions/{id}` | [Update session](/api-reference/endpoint/v1/update-session) |
+| DELETE | `/v1/sessions/{id}` | [Delete session](/api-reference/endpoint/v1/delete-session) |
+| GET | `/v1/sessions/search` | [Search sessions](/api-reference/endpoint/v1/search-sessions) |
+| GET | `/v1/sessions/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-sessions-id-history) |
+| GET | `/v2/sessions` | [List sessions](/api-reference/endpoint/v2/list-sessions) |
+| POST | `/v2/sessions` | [Create session](/api-reference/endpoint/v2/create-session) |
+| GET | `/v2/sessions/{id}` | [Get session](/api-reference/endpoint/v2/get-session) |
+| PATCH | `/v2/sessions/{id}` | [Update session](/api-reference/endpoint/v2/update-session) |
+| DELETE | `/v2/sessions/{id}` | [Delete session](/api-reference/endpoint/v2/delete-session) |
+| GET | `/v2/sessions/search` | [Search sessions](/api-reference/endpoint/v2/search-sessions) |
+| GET | `/v2/sessions/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-sessions-id-history) |
+| GET | `/v1/evaluations` | [List evaluations](/api-reference/endpoint/v1/list-evaluations) |
+| POST | `/v1/evaluations` | [Create evaluation](/api-reference/endpoint/v1/create-evaluation) |
+| GET | `/v1/evaluations/{id}` | [Get evaluation](/api-reference/endpoint/v1/get-evaluation) |
+| PATCH | `/v1/evaluations/{id}` | [Update evaluation](/api-reference/endpoint/v1/update-evaluation) |
+| DELETE | `/v1/evaluations/{id}` | [Delete evaluation](/api-reference/endpoint/v1/delete-evaluation) |
+| GET | `/v1/evaluations/search` | [Search evaluations](/api-reference/endpoint/v1/search-evaluations) |
+| GET | `/v1/evaluations/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-evaluations-id-history) |
+| GET | `/v2/evaluations` | [List evaluations](/api-reference/endpoint/v2/list-evaluations) |
+| POST | `/v2/evaluations` | [Create evaluation](/api-reference/endpoint/v2/create-evaluation) |
+| GET | `/v2/evaluations/{id}` | [Get evaluation](/api-reference/endpoint/v2/get-evaluation) |
+| PATCH | `/v2/evaluations/{id}` | [Update evaluation](/api-reference/endpoint/v2/update-evaluation) |
+| DELETE | `/v2/evaluations/{id}` | [Delete evaluation](/api-reference/endpoint/v2/delete-evaluation) |
+| GET | `/v2/evaluations/search` | [Search evaluations](/api-reference/endpoint/v2/search-evaluations) |
+| GET | `/v2/evaluations/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-evaluations-id-history) |
+| GET | `/v1/audits` | [List audits](/api-reference/endpoint/v1/list-audits) |
+| POST | `/v1/audits` | [Create audit](/api-reference/endpoint/v1/create-audit) |
+| GET | `/v1/audits/{id}` | [Get audit](/api-reference/endpoint/v1/get-audit) |
+| PATCH | `/v1/audits/{id}` | [Update audit](/api-reference/endpoint/v1/update-audit) |
+| DELETE | `/v1/audits/{id}` | [Delete audit](/api-reference/endpoint/v1/delete-audit) |
+| GET | `/v1/audits/search` | [Search audits](/api-reference/endpoint/v1/search-audits) |
+| GET | `/v1/audits/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-audits-id-history) |
+| GET | `/v2/audits` | [List audits](/api-reference/endpoint/v2/list-audits) |
+| POST | `/v2/audits` | [Create audit](/api-reference/endpoint/v2/create-audit) |
+| GET | `/v2/audits/{id}` | [Get audit](/api-reference/endpoint/v2/get-audit) |
+| PATCH | `/v2/audits/{id}` | [Update audit](/api-reference/endpoint/v2/update-audit) |
+| DELETE | `/v2/audits/{id}` | [Delete audit](/api-reference/endpoint/v2/delete-audit) |
+| GET | `/v2/audits/search` | [Search audits](/api-reference/endpoint/v2/search-audits) |
+| GET | `/v2/audits/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-audits-id-history) |
+| GET | `/v1/alerts` | [List alerts](/api-reference/endpoint/v1/list-alerts) |
+| POST | `/v1/alerts` | [Create alert](/api-reference/endpoint/v1/create-alert) |
+| GET | `/v1/alerts/{id}` | [Get alert](/api-reference/endpoint/v1/get-alert) |
+| PATCH | `/v1/alerts/{id}` | [Update alert](/api-reference/endpoint/v1/update-alert) |
+| DELETE | `/v1/alerts/{id}` | [Delete alert](/api-reference/endpoint/v1/delete-alert) |
+| GET | `/v1/alerts/search` | [Search alerts](/api-reference/endpoint/v1/search-alerts) |
+| GET | `/v1/alerts/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-alerts-id-history) |
+| GET | `/v2/alerts` | [List alerts](/api-reference/endpoint/v2/list-alerts) |
+| POST | `/v2/alerts` | [Create alert](/api-reference/endpoint/v2/create-alert) |
+| GET | `/v2/alerts/{id}` | [Get alert](/api-reference/endpoint/v2/get-alert) |
+| PATCH | `/v2/alerts/{id}` | [Update alert](/api-reference/endpoint/v2/update-alert) |
+| DELETE | `/v2/alerts/{id}` | [Delete alert](/api-reference/endpoint/v2/delete-alert) |
+| GET | `/v2/alerts/search` | [Search alerts](/api-reference/endpoint/v2/search-alerts) |
+| GET | `/v2/alerts/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-alerts-id-history) |
+| GET | `/v1/monitors` | [List monitors](/api-reference/endpoint/v1/list-monitors) |
+| POST | `/v1/monitors` | [Create monitor](/api-reference/endpoint/v1/create-monitor) |
+| GET | `/v1/monitors/{id}` | [Get monitor](/api-reference/endpoint/v1/get-monitor) |
+| PATCH | `/v1/monitors/{id}` | [Update monitor](/api-reference/endpoint/v1/update-monitor) |
+| DELETE | `/v1/monitors/{id}` | [Delete monitor](/api-reference/endpoint/v1/delete-monitor) |
+| GET | `/v1/monitors/search` | [Search monitors](/api-reference/endpoint/v1/search-monitors) |
+| GET | `/v1/monitors/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-monitors-id-history) |
+| GET | `/v2/monitors` | [List monitors](/api-reference/endpoint/v2/list-monitors) |
+| POST | `/v2/monitors` | [Create monitor](/api-reference/endpoint/v2/create-monitor) |
+| GET | `/v2/monitors/{id}` | [Get monitor](/api-reference/endpoint/v2/get-monitor) |
+| PATCH | `/v2/monitors/{id}` | [Update monitor](/api-reference/endpoint/v2/update-monitor) |
+| DELETE | `/v2/monitors/{id}` | [Delete monitor](/api-reference/endpoint/v2/delete-monitor) |
+| GET | `/v2/monitors/search` | [Search monitors](/api-reference/endpoint/v2/search-monitors) |
+| GET | `/v2/monitors/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-monitors-id-history) |
+| GET | `/v1/webhooks` | [List webhooks](/api-reference/endpoint/v1/list-webhooks) |
+| POST | `/v1/webhooks` | [Create webhook](/api-reference/endpoint/v1/create-webhook) |
+| GET | `/v1/webhooks/{id}` | [Get webhook](/api-reference/endpoint/v1/get-webhook) |
+| PATCH | `/v1/webhooks/{id}` | [Update webhook](/api-reference/endpoint/v1/update-webhook) |
+| DELETE | `/v1/webhooks/{id}` | [Delete webhook](/api-reference/endpoint/v1/delete-webhook) |
+| GET | `/v1/webhooks/search` | [Search webhooks](/api-reference/endpoint/v1/search-webhooks) |
+| GET | `/v1/webhooks/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-webhooks-id-history) |
+| GET | `/v2/webhooks` | [List webhooks](/api-reference/endpoint/v2/list-webhooks) |
+| POST | `/v2/webhooks` | [Create webhook](/api-reference/endpoint/v2/create-webhook) |
+| GET | `/v2/webhooks/{id}` | [Get webhook](/api-reference/endpoint/v2/get-webhook) |
+| PATCH | `/v2/webhooks/{id}` | [Update webhook](/api-reference/endpoint/v2/update-webhook) |
+| DELETE | `/v2/webhooks/{id}` | [Delete webhook](/api-reference/endpoint/v2/delete-webhook) |
+| GET | `/v2/webhooks/search` | [Search webhooks](/api-reference/endpoint/v2/search-webhooks) |
+| GET | `/v2/webhooks/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-webhooks-id-history) |
+| GET | `/v1/integrations` | [List integrations](/api-reference/endpoint/v1/list-integrations) |
+| POST | `/v1/integrations` | [Create integration](/api-reference/endpoint/v1/create-integration) |
+| GET | `/v1/integrations/{id}` | [Get integration](/api-reference/endpoint/v1/get-integration) |
+| PATCH | `/v1/integrations/{id}` | [Update integration](/api-reference/endpoint/v1/update-integration) |
+| DELETE | `/v1/integrations/{id}` | [Delete integration](/api-reference/endpoint/v1/delete-integration) |
+| GET | `/v1/integrations/search` | [Search integrations](/api-reference/endpoint/v1/search-integrations) |
+| GET | `/v1/integrations/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-integrations-id-history) |
+| GET | `/v2/integrations` | [List integrations](/api-reference/endpoint/v2/list-integrations) |
+| POST | `/v2/integrations` | [Create integration](/api-reference/endpoint/v2/create-integration) |
+| GET | `/v2/integrations/{id}` | [Get integration](/api-reference/endpoint/v2/get-integration) |
+| PATCH | `/v2/integrations/{id}` | [Update integration](/api-reference/endpoint/v2/update-integration) |
+| DELETE | `/v2/integrations/{id}` | [Delete integration](/api-reference/endpoint/v2/delete-integration) |
+| GET | `/v2/integrations/search` | [Search integrations](/api-reference/endpoint/v2/search-integrations) |
+| GET | `/v2/integrations/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-integrations-id-history) |
+| GET | `/v1/organizations` | [List organizations](/api-reference/endpoint/v1/list-organizations) |
+| POST | `/v1/organizations` | [Create organization](/api-reference/endpoint/v1/create-organization) |
+| GET | `/v1/organizations/{id}` | [Get organization](/api-reference/endpoint/v1/get-organization) |
+| PATCH | `/v1/organizations/{id}` | [Update organization](/api-reference/endpoint/v1/update-organization) |
+| DELETE | `/v1/organizations/{id}` | [Delete organization](/api-reference/endpoint/v1/delete-organization) |
+| GET | `/v1/organizations/search` | [Search organizations](/api-reference/endpoint/v1/search-organizations) |
+| GET | `/v1/organizations/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-organizations-id-history) |
+| GET | `/v2/organizations` | [List organizations](/api-reference/endpoint/v2/list-organizations) |
+| POST | `/v2/organizations` | [Create organization](/api-reference/endpoint/v2/create-organization) |
+| GET | `/v2/organizations/{id}` | [Get organization](/api-reference/endpoint/v2/get-organization) |
+| PATCH | `/v2/organizations/{id}` | [Update organization](/api-reference/endpoint/v2/update-organization) |
+| DELETE | `/v2/organizations/{id}` | [Delete organization](/api-reference/endpoint/v2/delete-organization) |
+| GET | `/v2/organizations/search` | [Search organizations](/api-reference/endpoint/v2/search-organizations) |
+| GET | `/v2/organizations/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-organizations-id-history) |
+| GET | `/v1/usage` | [List usage](/api-reference/endpoint/v1/list-usage) |
+| POST | `/v1/usage` | [Create usage-record](/api-reference/endpoint/v1/create-usage-record) |
+| GET | `/v1/usage/{id}` | [Get usage-record](/api-reference/endpoint/v1/get-usage-record) |
+| PATCH | `/v1/usage/{id}` | [Update usage-record](/api-reference/endpoint/v1/update-usage-record) |
+| DELETE | `/v1/usage/{id}` | [Delete usage-record](/api-reference/endpoint/v1/delete-usage-record) |
+| GET | `/v1/usage/search` | [Search usage](/api-reference/endpoint/v1/search-usage) |
+| GET | `/v1/usage/{id}/history` | [Read revision history](/api-reference/endpoint/v1/read-revision-history-get-v1-usage-id-history) |
+| GET | `/v2/usage` | [List usage](/api-reference/endpoint/v2/list-usage) |
+| POST | `/v2/usage` | [Create usage-record](/api-reference/endpoint/v2/create-usage-record) |
+| GET | `/v2/usage/{id}` | [Get usage-record](/api-reference/endpoint/v2/get-usage-record) |
+| PATCH | `/v2/usage/{id}` | [Update usage-record](/api-reference/endpoint/v2/update-usage-record) |
+| DELETE | `/v2/usage/{id}` | [Delete usage-record](/api-reference/endpoint/v2/delete-usage-record) |
+| GET | `/v2/usage/search` | [Search usage](/api-reference/endpoint/v2/search-usage) |
+| GET | `/v2/usage/{id}/history` | [Read revision history](/api-reference/endpoint/v2/read-revision-history-get-v2-usage-id-history) |
+
+## Events
+
+| Method | Route or event | Reference |
+| --- | --- | --- |
+| Webhook | `configuration.changed` | [configuration.changed](/api-reference/webhook/configuration-changed) |
+| Webhook | `boundary.changed` | [boundary.changed](/api-reference/webhook/boundary-changed) |
+| Webhook | `session.closed` | [session.closed](/api-reference/webhook/session-closed) |
+| Webhook | `evaluation.completed` | [evaluation.completed](/api-reference/webhook/evaluation-completed) |
+| Webhook | `alert.opened` | [alert.opened](/api-reference/webhook/alert-opened) |
+| Webhook | `token.revoked` | [token.revoked](/api-reference/webhook/token-revoked) |

@@ -1,0 +1,3 @@
+GET https://api.boundarykit.com/v1/sandboxes
+X-Organization-Id: {{organization}}
+X-API-Key: {{apiKey}}

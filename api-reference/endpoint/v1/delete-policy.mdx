@@ -1,0 +1,30 @@
+---
+title: "Delete policy"
+openapi: DELETE /v1/policies/{id}
+---
+
+## Operator notes
+
+Confirm the record identifier against a fresh read before removal.
+
+{/* GENERATED:START */}
+
+`DELETE /v1/policies/{id}`
+
+## Parameters
+
+- `X-Organization-Id` (header)
+
+- `id` (path)
+
+## Responses
+
+- `204` Record removed.
+
+- `403` Scope denied
+
+- `503` Service unavailable
+
+{/* GENERATED:END */}
+
+Keep the request ID for `/v1/policies/{id}` with the workspace audit record.

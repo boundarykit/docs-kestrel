@@ -1,0 +1,3 @@
+GET https://api.boundarykit.com/v2/sessions
+X-Organization-Id: {{organization}}
+X-API-Key: {{apiKey}}

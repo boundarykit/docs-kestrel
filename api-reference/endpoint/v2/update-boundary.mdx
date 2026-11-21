@@ -1,0 +1,30 @@
+---
+title: "Update boundary"
+api: PATCH https://api.boundarykit.com/v2/boundaries/{id}
+---
+
+## Operator notes
+
+Read the current record before submitting a partial update.
+
+{/* GENERATED:START */}
+
+`PATCH /v2/boundaries/{id}`
+
+## Parameters
+
+- `X-Organization-Id` (header)
+
+- `id` (path)
+
+## Responses
+
+- `200` Request completed.
+
+- `403` Scope denied
+
+- `503` Service unavailable
+
+{/* GENERATED:END */}
+
+Keep the request ID for `/v2/boundaries/{id}` with the workspace audit record.

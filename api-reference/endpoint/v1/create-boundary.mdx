@@ -1,0 +1,30 @@
+---
+title: "Create boundary"
+api: POST https://api.boundarykit.com/v1/boundaries
+---
+
+## Operator notes
+
+Use an isolated workspace when rehearsing this request.
+
+{/* GENERATED:START */}
+
+`POST /v1/boundaries`
+
+## Parameters
+
+- `X-Organization-Id` (header)
+
+## Responses
+
+- `200` Request completed.
+
+- `202` Queued for processing.
+
+- `403` Scope denied
+
+- `503` Service unavailable
+
+{/* GENERATED:END */}
+
+Keep the request ID for `/v1/boundaries` with the workspace audit record.
